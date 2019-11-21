@@ -1,11 +1,11 @@
 name: Swift
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build:
 
-    runs-on: macOS-latest
+    runs-on: [macOS-latest, macOS-10.14]
 
     steps:
     - uses: actions/checkout@v1
